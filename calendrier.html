@@ -7,25 +7,24 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src=" https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js "></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <div w3-include-html="navbar.html"></div>
     </header>
-    <main class="bg-gradient-to-b from-black via-black to-red-500 h-[100vh] pt-2">
+    <main class="bg-gradient-to-b from-black via-black to-red-500 h-full pt-2 pb-20">
         <section class="container mx-auto">
             <div class="bg-white border-t border-black rounded-xl p-3">
                 <div id='calendar'></div>
             </div>
         </section>
     </main>
-    <script>
-
-        
-
-    </script>
-    <script src="calendrier.js"></script>
+    <footer>
+        <div w3-include-html="footer.html"></div>
+    </footer>
+    <script src="js/calendrier.js"></script>
     <script src="js/include.js"></script>
 </body>
 
