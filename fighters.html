@@ -8,15 +8,52 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
-    
+
 </head>
 
 <body>
     <header>
-        <div w3-include-html="navbar.html"></div>
+        <nav class="flex justify-between w-full items-center w-full ">
+            <div>
+                <a href="index.html"><img src="img/logo_versus.jpg" alt="logo header" class="w-32 h-fit"></a>
+            </div>
+            <ul class="flex md:flex-row flex-col max-md:hidden" id="boutons">
+                <a href="index.html" class="mr-10 px-2 py-1.5 hover:border border-sky-500 rounded-xl ">
+                    <li>Accueil</li>
+                </a>
+                <a href="calendrier.html" class="mr-10 px-2 py-1.5 hover:border border-sky-500 rounded-xl ">
+                    <li>Calendrier des combats</li>
+                </a>
+                <a href="fighters.html" class="mr-10 px-2 py-1.5 hover:border border-sky-500 rounded-xl ">
+                    <li>Liste des combatants</li>
+                </a>
+                <a href="contact.html" class="mr-10 px-2 py-1.5 hover:border border-sky-500 rounded-xl ">
+                    <li>Contact</li>
+                </a>
+            </ul>
+            <img src="img/icons8-menu-64.png" alt="hamburger menu" id="icon" class="md:hidden">
+        </nav>
     </header>
     <main class="bg-gradient-to-b from-black via-black to-red-500 h-full pb-20">
         <section class="container mx-auto">
+            <dialog id="modals">
+                <form action="" method="dialog">
+                    <div class="flex justify-center">
+                        <p id="infos"></p>
+                        <p id="infos2">
+                            <!-- Coups directs par minutes: </br>
+                            Precision des coups directs: </br>
+                            Moyenne de Takedowns: </br>
+                            Moyenne de soumissions: </br>
+                            Pourcentage de KO: </br>
+                            Pourcentage de TKO: </br>
+                            Pourcentage de victoires sur décisions: </br> -->
+
+                        </p>
+                    </div>
+                    <button class="text-xl border rounded-xl w-48 h-10 bg-slate-400">FERME LA</button>
+                </form>
+            </dialog>
             <div id="test"></div>
         </section>
     </main>
@@ -25,6 +62,7 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/include.js"></script>
+    <script src="js/responsiv.js"></script>
 </body>
 
 </html>

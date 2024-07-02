@@ -12,11 +12,30 @@
 
 <body>
     <header>
-        <div w3-include-html="navbar.html"></div>
+        <nav class="flex justify-between w-full items-center w-full ">
+            <div>
+                <a href="index.html"><img src="img/logo_versus.jpg" alt="logo header" class="w-32 h-fit"></a>
+            </div>
+            <ul class="flex md:flex-row flex-col max-md:hidden" id="boutons">
+                <a href="index.html" class="mr-10 px-2 py-1.5 hover:border border-sky-500 rounded-xl">
+                    <li>Accueil</li>
+                </a>
+                <a href="calendrier.html" class="mr-10 px-2 py-1.5 hover:border border-sky-500 rounded-xl">
+                    <li>Calendrier des combats</li>
+                </a>
+                <a href="fighters.html" class="mr-10 px-2 py-1.5 hover:border border-sky-500 rounded-xl">
+                    <li>Liste des combatants</li>
+                </a>
+                <a href="contact.html" class="mr-10 px-2 py-1.5 hover:border border-sky-500 rounded-xl">
+                    <li>Contact</li>
+                </a>
+            </ul>
+            <img src="img/icons8-menu-64.png" alt="hamburger menu" id="icon" class="md:hidden">
+        </nav>
     </header>
-    <main class="bg-gradient-to-b from-black via-black to-red-500 h-full pt-2 pb-20">
+    <main class="bg-gradient-to-b from-black via-black to-red-500 h-full pt-2 pb-10">
         <section class="container mx-auto">
-            <div class="bg-white border-t border-black rounded-xl p-3">
+            <div class="bg-white border-t border-black rounded-xl p-3 max-md:mx-2">
                 <div id='calendar'></div>
             </div>
         </section>
@@ -26,6 +45,7 @@
     </footer>
     <script src="js/calendrier.js"></script>
     <script src="js/include.js"></script>
+    <script src="js/responsiv.js"></script>
 </body>
 
 </html>
