@@ -102,12 +102,12 @@ async function afficherFighters() {
             Soumissions: ${FIGHTERS[index].Submissions} 
             Défaites sur soumissions: ${FIGHTERS[index].SubmissionsLosses} `;
               info2.innerText = `Coups directs par minutes: ${FIGHTERS[index].CareerStats.SigStrikesLandedPerMinute}
-          Precision des coups directs: ${FIGHTERS[index].CareerStats.SigStrikeAccuracy}
-          Moyenne de Takedowns: ${FIGHTERS[index].CareerStats.TakedownAverage}
-          Moyenne de soumissions: ${FIGHTERS[index].CareerStats.SubmissionAverage}
-          Pourcentage de KO: ${FIGHTERS[index].CareerStats.KnockoutPercentage}
-          Pourcentage de TKO: ${FIGHTERS[index].CareerStats.TechnicalKnockoutPercentage}
-          Pourcentage de victoires sur décisions: ${FIGHTERS[index].CareerStats.DecisionPercentage}`;
+            Precision des coups directs: ${FIGHTERS[index].CareerStats.SigStrikeAccuracy}
+            Moyenne de Takedowns: ${FIGHTERS[index].CareerStats.TakedownAverage}
+            Moyenne de soumissions: ${FIGHTERS[index].CareerStats.SubmissionAverage}
+            Pourcentage de KO: ${FIGHTERS[index].CareerStats.KnockoutPercentage}
+            Pourcentage de TKO: ${FIGHTERS[index].CareerStats.TechnicalKnockoutPercentage}
+            Pourcentage de victoires sur décisions: ${FIGHTERS[index].CareerStats.DecisionPercentage}`;
             k++;
             modalss.showModal()
           }
