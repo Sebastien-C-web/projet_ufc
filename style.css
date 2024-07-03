@@ -24,10 +24,6 @@ body{
     height: fit-content;
 }
 
-
-
-
-
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
@@ -51,5 +47,42 @@ body{
     height: fit-content;
   }
 
+#img_mod{
+    width: 550px;
+    height: fit-content;
+}  
+
+:modal {
+    border: 2px solid rgb(63, 61, 61);
+    border-radius: 5px;
+    background-color: #a6aa5b;
+
+}
+
+.marquee-rtl {
+    max-width: 30em;                    
+    margin: 1em auto 2em;
+    border: 10px solid #F0F0FF;
+    overflow: hidden;                    
+    box-shadow: 0 .25em .5em #CCC,inset 0 0 1em .25em #CCC;
+}
+
+@keyframes defilement-rtl {
+    0% {
+      transform: translate3d(0,0,0);      /* position initiale à droite */
+    }
+    100% {
+      transform: translate3d(-100%,0,0);  /* position finale à gauche */
+    }
+}  
+
+.marquee-rtl > :first-child {
+    display: inline-block;                
+    padding-right: 2em;                   
+    padding-left: 100%;                   
+    white-space: nowrap;                 
+    animation: defilement-rtl 15s infinite linear;
+}
+  
 
 
