@@ -82,9 +82,6 @@ async function afficherFighters() {
             index = i;
           }
         }
-
-
-
         return gridjs.h('button', {
           className: 'py-2 mb-4 px-4 border rounded-md text-white bg-blue-600',
           onClick: () => {
@@ -101,7 +98,7 @@ async function afficherFighters() {
             Défaites sur TKO: ${FIGHTERS[index].TechnicalKnockoutsLosses}
             Soumissions: ${FIGHTERS[index].Submissions} 
             Défaites sur soumissions: ${FIGHTERS[index].SubmissionsLosses} `;
-              info2.innerText = `Coups directs par minutes: ${FIGHTERS[index].CareerStats.SigStrikesLandedPerMinute}
+            info2.innerText = `Coups directs par minutes: ${FIGHTERS[index].CareerStats.SigStrikesLandedPerMinute}
             Precision des coups directs: ${FIGHTERS[index].CareerStats.SigStrikeAccuracy}
             Moyenne de Takedowns: ${FIGHTERS[index].CareerStats.TakedownAverage}
             Moyenne de soumissions: ${FIGHTERS[index].CareerStats.SubmissionAverage}
@@ -111,7 +108,6 @@ async function afficherFighters() {
             k++;
             modalss.showModal()
           }
-
         }, 'More');
       }
     },
